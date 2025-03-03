@@ -1,20 +1,20 @@
-#Smart Irrigation System - Arduino/Raspberry Pi Code
-#Overview
+# Smart Irrigation System - Arduino/Raspberry Pi Code
+# Overview
 This repository contains the Arduino/Raspberry Pi code for a smart irrigation system that monitors soil moisture and temperature in real time. If the soil moisture level falls below a predefined threshold, the system automatically activates a water valve to irrigate the field.
 
-#Features
+# Features
 Real-time monitoring of soil moisture and temperature
 Automatic water valve control based on soil moisture levels
 Serial communication with an AI assistant for sensor data requests
 Manual control through serial commands
-Hardware Requirements
+# Hardware Requirements
 Microcontroller: Arduino Uno/Nano or Raspberry Pi
 Sensors:
 Soil Moisture Sensor (e.g., FC-28, Capacitive Soil Sensor)
 Temperature Sensor (e.g., DHT11/DHT22 or LM35) (Optional)
 Water Valve & Relay Module
 Power Supply for sensors and microcontroller
-Installation & Setup
+# Installation & Setup
 1. Connect the Hardware
 Soil Moisture Sensor: Connect A0 (Analog Pin)
 Temperature Sensor: Connect A1 (Analog Pin) (Optional)
@@ -30,7 +30,7 @@ The AI assistant or any external program can send the following commands to the 
 'R' → Request soil moisture and temperature data
 'W' → Open the water valve (Start irrigation)
 'S' → Close the water valve (Stop irrigation)
-Code Explanation
+# Code Explanation
 1. Pin Configuration
 cpp
 Copy
@@ -82,11 +82,10 @@ if (command == 'S') {  // Stop Water Valve
 }
 'W' command: Turns ON the water valve
 'S' command: Turns OFF the water valve
-Future Enhancements
+# Future Enhancements
 ✅ Integrate AI assistant for real-time voice-based irrigation control
 ✅ Wi-Fi connectivity for remote monitoring (ESP8266/ESP32)
 ✅ Cloud dashboard for historical data visualization
 
-Contributors
-👨‍💻 [Your Name] – AI & Embedded Systems Developer
+
 
